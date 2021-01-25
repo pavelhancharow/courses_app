@@ -33,6 +33,7 @@
 .card-action.actions {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .course-form {
@@ -58,4 +59,19 @@
   height: 290px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.sidenav-overlay {
+  z-index: 996;
+}
+
+@media screen and (max-width: 700px) {
+  .card-action.actions {
+    height: auto;
+  }
+}
+@media screen and (max-width: 375px) {
+  nav .brand-logo {
+    font-size: 1.8rem;
+  }
 }
